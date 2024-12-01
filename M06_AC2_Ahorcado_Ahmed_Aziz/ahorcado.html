@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinar Palabra</title>
+    <link rel="stylesheet" href="ahorcado.css">
+</head>
+<body>
+    <header>
+        <h1>Adivina la Palabra</h1>
+        <form id="wordForm">
+            <input type="password" id="wordInput" placeholder="Introdueix una paraula" required>
+            <button type="submit">Començar partida</button>
+            <span id="togglePassword" onclick="togglePassword()">👁️</span>
+        </form>
+    </header>
+    <main>
+        <div id="wordDisplay"></div>
+        <div id="info">
+            <p>Punts: <span id="score">0</span></p>
+            <p>Partides: <span id="totalGames">0</span></p>
+            <p>Partides guanyades: <span id="wonGames">0</span></p>
+            <p>Partida amb més punts: <span id="highScore">0</span></p>
+        </div>
+        <div id="lettersButtons"></div>
+        <img id="hangmanImage" src="images/0.png" alt="Ahorcado" style="width: 200px; margin-top: 20px;">
+    </main>
+    <script src="ahorcado.js"></script>
+</body>
+</html>
